@@ -38,12 +38,12 @@ echo ""
 echo "Done!"
 
 # print ssh login info
-UID=$(whoami)
+USER=$(whoami)
 IP=$(hostname -I)
 echo ""
 echo "Your SSH key has been added! Please use the following credentials to log in:"
 echo ""
-echo " $ ssh $UID@$IP"
+echo " $ ssh $USER@$IP"
 echo ""
 
 exit 0
