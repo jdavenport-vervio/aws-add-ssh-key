@@ -63,6 +63,6 @@ print ""
 print "${Green}Your SSH key has been added! Please use the following credentials to log in:"
 print ""
 print "${Yellow} $ ssh $USER@$IP"
-print ""
+print "$Color_Off"
 
 exit 0
