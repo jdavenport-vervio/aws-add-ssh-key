@@ -8,7 +8,7 @@ Simple script for adding your SSH key to an AWS instance
 
 ```sh
 cd ~ # make sure you're in your home directory
-wget https://raw.githubusercontent.com/jdavenport-vervio/aws-add-ssh-key/master/aws-add-key.sh
+wget --no-cache https://raw.githubusercontent.com/jdavenport-vervio/aws-add-ssh-key/master/aws-add-key.sh
 chmod +x aws-add-key.sh
 ./aws-add-key.sh
 
