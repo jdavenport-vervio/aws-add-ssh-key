@@ -13,4 +13,10 @@ if [[ $(whoami) == "root" ]]; then
     exit 1
 fi
 
-# prompt for key
+# ask user to get public key
+echo "Please run the following command on your local terminal to get your SSH key:"
+echo ""
+echo " $ cat ~/.ssh/id_rsa.pub"
+echo ""
+echo "(if your key is in a different file read the appropriate one, make sure it's the .pub file)"
+read -p "Press Enter to continue..."
