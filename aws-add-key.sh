@@ -20,3 +20,10 @@ echo " $ cat ~/.ssh/id_rsa.pub"
 echo ""
 echo "(if your key is in a different file read the appropriate one, make sure it's the .pub file)"
 read -p "Press Enter to continue..."
+
+# read public key
+echo ""
+echo "Please paste your public key into the following prompt."
+echo " (e.g. ssh-rsa AAAAB3NzaC.....DrTmjz3D username@hostname)"
+echo ""
+read -p "Enter your public key: " PUBLIC_KEY
