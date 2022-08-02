@@ -18,6 +18,7 @@ IGreen='\033[0;92m'
 
 # ------------------------------------ Start script ------------------------------------
 
+clear
 print "$On_Cyan================== AWS ADD KEY =================="
 print "$On_Cyan|----------------Vervio Digital-----------------|"
 print "$Color_Off"
