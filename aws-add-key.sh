@@ -27,3 +27,20 @@ echo "Please paste your public key into the following prompt."
 echo " (e.g. ssh-rsa AAAAB3NzaC.....DrTmjz3D username@hostname)"
 echo ""
 read -p "Enter your public key: " PUBLIC_KEY
+
+# add the SSH key to the key file
+echo "Adding your public key..."
+mkdir -p ~/.ssh && chmod go-rwx ~/.ssh
+echo $PUBLIC_KEY >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+
+echo "Done!"
+
+# print ssh login info
+echo ""
+echo "Your SSH key has been added! Please use the following credentials to log in:"
+echo ""
+echo " $ ssh $(whoami)@$(hostname -I)"
+echo ""
+
+exit 0
