@@ -34,6 +34,7 @@ mkdir -p ~/.ssh && chmod go-rwx ~/.ssh
 echo $PUBLIC_KEY >> ~/.ssh/authorized_keys
 chmod 600 ~/.ssh/authorized_keys
 
+echo ""
 echo "Done!"
 
 # print ssh login info
